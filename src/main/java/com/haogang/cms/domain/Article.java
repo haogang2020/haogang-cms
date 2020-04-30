@@ -22,7 +22,7 @@ public class Article implements Serializable{
 	private Integer status;//文章状态 0：待审 2：审核通过，-1：驳回
 	private Integer deleted;//文章是否删除 0：正常 1：删除
 	private Date created;//文章发布时间
-	private Date updates;//文章修改时间
+	private Date updated;//文章修改时间
 	private String contentType;//文章内容类型0：html， 1：：json
 	private User user;//封装对象
 	private Channel channel;//封装对象
@@ -123,11 +123,11 @@ public class Article implements Serializable{
 	public void setCreated(Date created) {
 		this.created = created;
 	}
-	public Date getUpdates() {
-		return updates;
+	public Date getUpdated() {
+		return updated;
 	}
-	public void setUpdates(Date updates) {
-		this.updates = updates;
+	public void setUpdated(Date updated) {
+		this.updated = updated;
 	}
 	public String getContentType() {
 		return contentType;
